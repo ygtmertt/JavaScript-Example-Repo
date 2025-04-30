@@ -91,6 +91,7 @@ console.log(CemberinAlani(15, pi));
 */
 
 /*  (oto test yok) sayilar dizisi içinde kaç adet sayı olduğunu konsola yazdırın */
+console.log(sayilar.length);
 
 let ucetambolunenler,
   enkucuk,
@@ -117,7 +118,14 @@ console.log("Sayilar dizisinin en büyük elemanı: "+enBuyukSayi);
 
 // 3b çözümü:
 
-/* kodlar buraya */
+ucetambolunenler = [];
+sayilar.forEach(num => {
+  if (num % 3 === 0) {
+    ucetambolunenler.push(num);
+  }
+});
+
+console.log("sayilar dizisinde üçe tam bölünen sayılar: " + ucetambolunenler);
 
 // 3c çözümü:
 
