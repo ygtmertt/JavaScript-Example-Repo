@@ -140,9 +140,12 @@ for(let i=0; i<sayilar.length; i++) {
   besyuzdenkucuksayilar.push(sayilar[i]);
 }
 console.log("Sayilar dizisinde 500'den küçük olan sayılar: "+besyuzdenkucuksayilar);
+
 // 3e çözümü
 
-/* kodlar buraya */
+siralisayilar = besyuzdenkucuksayilar.sort((a, b) => a - b);
+console.log(siralisayilar);
+
 
 // 3f çözümü
 
