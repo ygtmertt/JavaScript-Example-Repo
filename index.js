@@ -149,7 +149,21 @@ console.log(siralisayilar);
 
 // 3f çözümü
 
-/* kodlar buraya */
+tekraredensayilar = [];
+tekrarlilarObject = {};
+for(let i=0; i<sayilar.length; i++) {
+  counter=1;
+  for(let j=i+1; j<sayilar.length; j++) {
+    if(sayilar[i]===sayilar[j]) {
+      counter++;
+      tekrarlilarObject.sayi=sayilar[i];
+      tekrarlilarObject.tekrarSayisi=counter;
+      tekraredensayilar.push(`${tekrarlilarObject.sayi} sayısı ${tekrarlilarObject.tekrarSayisi} kez tekrar etti.`);
+    }
+  }
+}
+console.log(tekraredensayilar);
+
 
 /*  Bu satırın aşağısındaki kodları lütfen değiştirmeyin  */
 
