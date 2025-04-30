@@ -129,7 +129,8 @@ console.log("sayilar dizisinde üçe tam bölünen sayılar: " + ucetambolunenle
 
 // 3c çözümü:
 
-/* kodlar buraya */
+ucebolunenlerintoplami = ucetambolunenler.reduce((acc, num) => acc+num, 0);
+console.log(ucebolunenlerintoplami);
 
 // 3d çözümü
 
