@@ -71,6 +71,7 @@ function CemberinAlani(yaricap, pi) {
 console.log(CemberinAlani(5, pi));
 
 /* (Oto test yok) Yukarıdaki CemberinAlani fonksiyonunu yarıçap = 15 vererek aşağıda çalıştırıp, sonucu konsolda gözlemleyin (console.log)  */
+console.log(CemberinAlani(15, pi));
 
 /* 	GÖREV 3:
 	- Sayfanın en üstünde global değişken olarak tanımlanmış bir sayilar dizisi bulunmaktadır. Bu dizi içinde 0 ile 1000 arasında rasgele oluşturulmuş tam sayılar ve ondalıklı sayılar bulunmaktadır. Bu diziyi kullanarak aşağıdakileri uygulayın:
@@ -101,7 +102,18 @@ let ucetambolunenler,
 
 // 3a çözümü
 
-/* kodlar buraya */
+let enKucukSayi = sayilar[0];
+let enBuyukSayi = sayilar[0];
+for(let i=0; i<sayilar.length; i++) {
+  if(sayilar[i]<enKucukSayi) {
+    enKucukSayi=sayilar[i];
+  }
+  else if(sayilar[i]>enBuyukSayi) {
+    enBuyukSayi=sayilar[i];
+  }
+}
+console.log("Sayilar dizisinin en küçük elemanı: "+enKucukSayi);
+console.log("Sayilar dizisinin en büyük elemanı: "+enBuyukSayi);
 
 // 3b çözümü:
 
