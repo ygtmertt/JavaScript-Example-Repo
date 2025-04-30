@@ -130,12 +130,16 @@ console.log("sayilar dizisinde üçe tam bölünen sayılar: " + ucetambolunenle
 // 3c çözümü:
 
 ucebolunenlerintoplami = ucetambolunenler.reduce((acc, num) => acc+num, 0);
-console.log(ucebolunenlerintoplami);
+console.log("Sayilar dizisindeki üçe bölünen sayıların toplamı: "+ucebolunenlerintoplami);
 
 // 3d çözümü
 
-/* kodlar buraya */
-
+besyuzdenkucuksayilar = [];
+sayilar.filter(num => num<500);
+for(let i=0; i<sayilar.length; i++) {
+  besyuzdenkucuksayilar.push(sayilar[i]);
+}
+console.log("Sayilar dizisinde 500'den küçük olan sayılar: "+besyuzdenkucuksayilar);
 // 3e çözümü
 
 /* kodlar buraya */
